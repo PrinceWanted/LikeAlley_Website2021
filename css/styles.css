@@ -1,6 +1,7 @@
 :root {
   --text: "Times New Roman", Times, serif;
   --text_color: #000;
+  --btn-color: #ffd362;
 }
 
 /* Start Footer */
@@ -98,55 +99,56 @@ input[type="text"]:focus {
   padding: 15px 30px;
   font-size: 20px;
   border: none;
-  background-color: #ffd362;
+  background-color: var(--btn-color);
 }
 
 /* End Footer */
 
 header {
-    position: relative;
-    background-color: black;
-    height: 75vh;
-    min-height: 25rem;
-    width: 100%;
-    overflow: hidden;
-  }
-  header video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-  }
-  
-  header .head-container {
-    position: relative;
-    z-index: 2;
-  }
-  
-  header .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    opacity: 0.5;
-    z-index: 1;
-  }
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
 
-  .row-header{
-    margin:0px auto;
-    padding:0px;
+header .head-container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.row-header {
+  margin: 0px auto;
+  padding: 0px;
 }
 .row-content {
+ /* Work-page */
     margin:0px auto;
     padding: 50px 0px 50px 0px;
     border-bottom: 1px ridge;
@@ -185,6 +187,12 @@ header {
     -webkit-text-fill-color: black;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
+
+  margin: 0px auto;
+  padding: 50px 0px 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px;
+
 }
 .titles-txt{
   font-family: fantasy;
@@ -202,3 +210,73 @@ header {
   display: block;
 }
 
+.container {
+  margin-top: 10em;
+  margin-bottom: 5em;
+}
+
+h2 {
+  font-size: 52px;
+}
+.card-text-style {
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: #ffd362;
+  margin-bottom: 0%;
+  color: #000;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  max-width: 1280px;
+}
+
+/* Carousel */
+.dark-cont {
+  margin-top: 7em;
+  min-width: 100%;
+  min-height: 75%;
+  background-color: black;
+  font-family: fantasy;
+  -webkit-text-fill-color: black;
+  -webkit-text-stroke-width: 1px;
+  
+}
+
+.css-card {
+  margin: 0 auto;
+  float: none;
+  border: none;
+  background: none;
+  color: #ffffff;
+}
+
+.css-card div {
+  padding-left: 0;
+}
+
+.arrow-img {
+  width: 20%;
+  height: 10%;
+  background: var(--btn-color);
+  -moz-border-radius: 70px;
+  -webkit-border-radius: 70px;
+  border-radius: 70px;
+}
+
+.seemore-btn {
+  border-radius: 0px;
+  background-color: var(--btn-color);
+}
+
+.seemore-btn div{
+  color: black !important;
+}
+
+.carousel .carousel-control {
+  visibility: hidden;
+}
+.carousel:hover .carousel-control {
+  visibility: visible;
+}
