@@ -148,10 +148,66 @@ header .overlay {
   padding: 0px;
 }
 .row-content {
+ /* Work-page */
+    margin:0px auto;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+    min-height:400px;
+}
+
+  .container{
+      margin-top: 10em;
+      margin-bottom: 5em;
+  }
+  h2{
+      font-size: 52px;
+  }
+  .card-text-style{
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: #ffd362;
+    margin-bottom: 0%;
+    color: #000;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+    max-width: 1280px;
+  }
+  .dark-cont{
+    margin-top: 7em;
+    min-width: 100%;
+    min-height: 75%;
+    background-color:black;
+    
+}
+.subtitles-txt{
+    font-family: fantasy;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+
   margin: 0px auto;
   padding: 50px 0px 50px 0px;
   border-bottom: 1px ridge;
   min-height: 400px;
+
+}
+.titles-txt{
+  font-family: fantasy;
+  -webkit-text-fill-color: #ffd362;
+}
+.header-bar{
+  background-image: url('https://mdbootstrap.com/img/new/slides/003.jpg');
+  max-height: 400px;
+}
+
+.navbar-brand {
+  position: absolute;
+  left: 50%;
+  margin-left: -50px !important;  /* 50% of your logo width */
+  display: block;
 }
 
 .container {
