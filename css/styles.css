@@ -157,7 +157,6 @@ header {
       margin-top: 10em;
       margin-bottom: 5em;
   }
-//check
   h2{
       font-size: 52px;
   }
@@ -179,9 +178,27 @@ header {
     min-width: 100%;
     min-height: 75%;
     background-color:black;
+    
+}
+.subtitles-txt{
     font-family: fantasy;
     -webkit-text-fill-color: black;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
+}
+.titles-txt{
+  font-family: fantasy;
+  -webkit-text-fill-color: #ffd362;
+}
+.header-bar{
+  background-image: url('https://mdbootstrap.com/img/new/slides/003.jpg');
+  max-height: 400px;
+}
+
+.navbar-brand {
+  position: absolute;
+  left: 50%;
+  margin-left: -50px !important;  /* 50% of your logo width */
+  display: block;
 }
 
