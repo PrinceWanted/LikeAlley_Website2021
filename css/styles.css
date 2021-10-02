@@ -4,6 +4,9 @@
   --btn-color: #ffd362;
 }
 
+
+
+
 /* Start Footer */
 .footer {
   background-color: #ffffff;
@@ -53,7 +56,9 @@ input[type="text"]:focus {
   font-size: 15px;
   font-family: var(--text);
 }
-
+.row{
+  max-width: 100%;
+}
 .footer-nav-header {
   margin-right: 0px;
   padding: 0px 0px 30px 0px;
@@ -149,16 +154,11 @@ header .overlay {
 }
 .row-content {
  /* Work-page */
-    margin:0px auto;
+    margin-left: 0px;
     padding: 50px 0px 50px 0px;
     border-bottom: 1px ridge;
     min-height:400px;
 }
-
-  .container{
-      margin-top: 10em;
-      margin-bottom: 5em;
-  }
   h2{
       font-size: 52px;
   }
@@ -191,7 +191,7 @@ header .overlay {
   margin: 0px auto;
   padding: 50px 0px 50px 0px;
   border-bottom: 1px ridge;
-  min-height: 400px;
+  /* min-height: 400px; */
 
 }
 .titles-txt{
@@ -281,4 +281,28 @@ video {
 }
 .carousel:hover .carousel-control {
   visibility: visible;
+}
+
+
+.client-logos{
+  max-width: 200px;
+  max-height: 150px;
+}
+
+.partners-cont{
+  transition: transform .7s ease-in-out;
+  margin-bottom: 10px;
+}
+.partners-big{
+  margin-left: 5px;
+  margin-right: 0%;
+}
+.partners-cont :hover{
+  transform: rotate(2deg);
+}
+.card :hover{
+  transform: rotate(0deg);
+}
+.fancy-txt{
+  font-family: 'Brush Script MT','Lucida Handwriting',cursive;
 }
