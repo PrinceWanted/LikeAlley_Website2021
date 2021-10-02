@@ -199,8 +199,10 @@ header .overlay {
   -webkit-text-fill-color: #ffd362;
 }
 .header-bar{
-  background-image: url('https://mdbootstrap.com/img/new/slides/003.jpg');
+  /* background-image: url('https://mdbootstrap.com/img/new/slides/003.jpg'); */
   max-height: 400px;
+  background: url('https://mdbootstrap.com/img/new/slides/003.jpg') no-repeat center fixed;
+  background-size: cover;
 }
 
 .navbar-brand {
