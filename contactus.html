@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title></title>
+</head>
+
+<body>
+    <div class="p-5">
+        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link text-dark active"
+                            href="./work.html"><strong>Work</strong></a></li>
+                    <li class="nav-item"><a class="nav-link text-dark"
+                            href="services.html"><strong>Services</strong></a></li>
+                </ul>
+            </div>
+            <a class="navbar-brand pt-3" href="./index.html">
+                <img src="img/Badge_Legendary_Hunt.png" height="40" width="40">
+            </a>
+            <button type="button" class="btn-focus float-right" onclick="window.location.href='/contactus.html'">
+                <strong>Contact Us</strong>
+            </button>
+        </nav>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <h1> WE’RE HAPPY YOU’RE HERE</h1>
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+                Which one are you?
+            </div>
+            <div class="col mt-3 d-flex justify-content-center">
+                <button type="button" value="corporation" id="corporation" class="btn btn-warning p-3 mr-3"
+                    onclick="corporationClicked()">
+                    <strong>I'M A CORPORATION</strong>
+                </button>
+                <button type="button" id="startup" value="startup" class="btn btn-warning p-3 ml-3"
+                    onclick="statupClicked()">
+                    <strong>I'M A STARTUP</strong>
+                </button>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col">
+                <!-- corporation form -->
+                <form id="corporationForm" style="display: none;">
+                    <div class="form-group row">
+                        <div class="col-6 col-md-6">
+                            <label for="firstname" class=" col-form-label">First Name</label>
+                            <input type="text" class="form-control" id="co_firstname" name="firstname">
+                            <small class="error-message pl-1"></small>
+                            <svg class="icon icon-success hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <svg class="icon icon-error hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div class="col-6 col-md-6 test">
+                            <label for="lastname" class="col-form-label">Last Name</label>
+                            <input type="text" class="form-control" id="co_lastname" name="lastname">
+                            <small class="error-message pl-1"></small>
+                            <svg class="icon icon-success hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <svg class="icon icon-error hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-4 col-md-4">
+                            <label for="email" class="col-form-label">Email</label>
+                            <input type="email" class="form-control" id="co_email" name=>
+                            <small class="error-message pl-1"></small>
+                            <svg class="icon icon-success hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <svg class="icon icon-error hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+
+                        <div class="col-4 col-md-4">
+                            <label for="company" class="col-form-label">Company</label>
+                            <input type="text" class="form-control" id="co_company" name=>
+                        </div>
+
+                        <div class="col-4 col-md-4">
+                            <label for="jobtitle" class="col-form-label">Job Title</label>
+                            <input type="text" class="form-control" id="co_jobtitle" name="jobtitle">
+                        </div>
+
+                    </div>
+                    <div class="form-group row">
+                        <label for="opinion" class="col-12 col-md-12 col-form-label">How would you like to work
+                            together?</label>
+                        <div class="col-12 col-md-12">
+                            <textarea type="text" class="form-control" id="co_opinion" name="opinion"></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <small>By clicking Submit, you agree to receive communications and that you have read
+                            our
+                            <underline>Privacy Policy</underline>, including our <underline> Cookie Use</underline>.
+                        </small>
+                    </div>
+
+                    <div class="mt-5 text-center">
+                        <input type="submit" value="submit" role="button" class="pl-3 pr-3 btn-normal btn btn-md">
+                        <!-- <button value="SUBMIT" role="button" class="pl-3 pr-3 btn-normal btn btn-md">SUBMIT</button> -->
+                    </div>
+                </form>
+
+                <!-- startup form -->
+                <form id="startupForm" style="display: none;">
+                    <div class="form-group row">
+                        <div class="col-6 col-md-6">
+                            <label for="firstname" class=" col-form-label">First Name</label>
+                            <input type="text" class="form-control" id="firstname" name="firstname">
+                            <small class="error-message pl-1"></small>
+                            <svg class="icon icon-success hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <svg class="icon icon-error hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div class="col-6 col-md-6">
+                            <label for="lastname" class="col-form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastname" name="lastname">
+                            <small class="error-message pl-1"></small>
+                            <svg class="icon icon-success hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <svg class="icon icon-error hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+
+                        <div class="col-6 col-md-6">
+                            <label for="email" class="col-form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email">
+                            <small class="error-message pl-1"></small>
+                            <svg class="icon icon-success hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <svg class="icon icon-error hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div class="col-6 col-md-6">
+                            <label for="jobtitle" class="col-form-label">Job Title</label>
+                            <input type="text" class="form-control" id="jobtitle" name="jobtitle">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-6 col-md-6">
+                            <label for="company" class="col-form-label">Company</label>
+                            <input type="text" class="form-control" id="company" name="company">
+                        </div>
+                        <div class="col-6 col-md-6">
+                            <label for="industry" class="col-form-label">Industry</label>
+                            <input type="text" class="form-control" id="industry" name="industry">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-6 col-md-6">
+                            <label for="company" class="col-form-label">How much capital have you
+                                raised?</label>
+                            <input type="text" class="form-control" id="capital" name="capital">
+                        </div>
+                        <div class="col-6 col-md-6">
+                            <label for="industry" class="col-form-label">Current Team Size </label>
+                            <input type="text" class="form-control" id="team-size" name="team-size">
+                        </div>
+                    </div>
+                    <div>
+                        <small>By clicking Submit, you agree to receive communications and that you have read
+                            our
+                            <underline>Privacy Policy</underline>, including our <underline> Cookie Use</underline>.
+                        </small>
+                    </div>
+
+                    <div class="mt-5 text-center">
+                        <input type="submit" value="SUBMIT" role="button" class="pl-3 pr-3 btn-normal btn btn-md">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/javascript.js"></script>
+</body>
