@@ -5,6 +5,9 @@
 }
 
 
+html{
+  scroll-behavior: smooth
+}
 
 
 /* Start Footer */
@@ -180,7 +183,6 @@ header .overlay {
     min-width: 100%;
     min-height: 75%;
     background-color:black;
-    
 }
 .subtitles-txt{
     font-family: fantasy;
@@ -190,8 +192,7 @@ header .overlay {
 
   margin: 0px auto;
   padding: 50px 0px 50px 0px;
-  border-bottom: 1px ridge;
-  /* min-height: 400px; */
+  
 
 }
 .titles-txt{
@@ -228,23 +229,17 @@ h2 {
   color: #000;
 }
 
+.card-title{
+  font-family: 'Brush Script MT','Lucida Handwriting',cursive;
+}
+
 video {
   width: 100%;
   height: auto;
   max-width: 1280px;
 }
 
-/* Carousel */
-.dark-cont {
-  margin-top: 7em;
-  min-width: 100%;
-  min-height: 75%;
-  background-color: black;
-  font-family: fantasy;
-  -webkit-text-fill-color: black;
-  -webkit-text-stroke-width: 1px;
-  
-}
+
 
 .css-card {
   margin: 0 auto;
@@ -296,6 +291,7 @@ video {
 .partners-big{
   margin-left: 5px;
   margin-right: 0%;
+  border-bottom: 2px solid gray;
 }
 .partners-cont :hover{
   transform: rotate(2deg);
@@ -305,4 +301,10 @@ video {
 }
 .fancy-txt{
   font-family: 'Brush Script MT','Lucida Handwriting',cursive;
+}
+.events-bg{
+  background: url("https://assets.website-files.com/5f3466a6e484ac06f6c32ed8/5f43ff2c9a790b74f01d0548_Decorative%20Line.png") no-repeat;
+    background-position: 50% 50%;
+    background-size: auto;
+    background-repeat: no-repeat;
 }
