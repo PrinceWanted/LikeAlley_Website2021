@@ -409,3 +409,59 @@ underline {
 .icon.icon-error {
   fill: var(--error-color);
 }
+
+
+/* accessibility */ 
+
+bold{
+  font-weight: bold;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.flex-container{
+  min-width: 50vw;
+  max-width: 100vw;
+}
+
+
+.text-decoration a{
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.text-decoration div{
+  text-transform: uppercase !important;
+  text-decoration: underline;
+  font-family: var(--text);
+  color: var(--text_color);
+  margin-bottom: 10px;
+  display: block;
+  font-size: 18px;
+  /* line-height: 15px; */
+  text-transform: none;
+}
+
+.text-decoration a:hover{
+  background-color: var(--btn-color);
+}
+
+.text-decoration a:focus{
+  outline: solid 3px #639af9 !important;
+  outline-offset: 4px !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  outline-style: inset !important;
+}
+
+.nav-list{
+  padding: 0px;
+  list-style-type: none;
+}
+
+.nav-list li a{
+  color: #000;
+  text-decoration: underline;
+}
