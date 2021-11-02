@@ -256,11 +256,17 @@ video {
   max-width: 170px;
   border: 0px;
 }
+#speaker{
+  padding: 0;
+  margin: 0px 10px;
+  max-width: 240px;
+  border: 0px;
+}
 
 #partner img{
   height: 150px;
 }
-#partner .card-body{
+#partner,#speaker .card-body{
   padding: 3px;
 }
 
